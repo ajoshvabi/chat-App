@@ -1,7 +1,7 @@
 import 'package:chat_app/module/auth/controller/auth_controller.dart';
 import 'package:chat_app/module/chat/controller/chat.controller.dart';
 import 'package:chat_app/module/messages/controller/message.controller.dart';
-import 'package:chat_app/module/messages/view/messages.view.dart';
+import 'package:chat_app/module/welcome/view/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
           ),
-          home: MessagesViewScreen(),
+          home: LoginScreen(),
         );
       },
     );
